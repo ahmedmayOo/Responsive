@@ -1,7 +1,7 @@
 
 var wrapper;
  
-var input ;
+var input = "https://ahmedghanem.netlify.com/";
 
 ( function getWrapper(){
 
