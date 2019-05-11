@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Tangerine:700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300i,400,400i"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+      <i class="fas fa-comment-alt static-icon"></i>
+      
+    <section class="showcase">
+      <nav>
+        <div class="logo">
+          RESPONSIVE
+        </div>
+        <div>
+            <i class="fas fa-bell bell icon-small"></i>
+        </div>
+        <div class="input">
+          <label for="">Insert Website</label>
+          <input type="text" name="" id="" placeholder="https://www.ahmedghanem.com">
+          <span onclick="go()">GO</span>
+        </div>
+        <div>
+          <i onclick="downToggle()" class="fas fa-chevron-circle-down toggle icon-small"></i> 
+           <i onclick="upToggle()" class="fas fa-chevron-circle-up toggle icon-small"></i> 
+            
+        </div>
+        <ul>
+          
+          <li><a href="#"><i class="fas fa-camera icon-small"  ></i></a></li>
+          <li><a  onclick="rotate()"  href="#"><i class="fas fa-sync-alt icon-small"></i></a></li>
+          <li><a href="#"><i class="fas fa-mobile-alt icon-small"></i></a></li>
+          <li><a href="#"><i class="fas fa-tablet-alt icon-small"><br></i></a></li>
+          <li><a href="#"><i class="fas fa-laptop icon-small"></i></i></a></li>
+          <li><a href="#"><i class="fas fa-tv icon-small"></i></i></a></li>
+        </ul>
+      </nav>
+      <div class="wrapper">
+        <aside>
+          <ul>
+            <li>Galaxy S5 <i class="fas fa-chevron-up"></i></li>
+            <li>Pixel 2 <i class="fas fa-chevron-up"></i></li>
+            <li>Pixel 2 XL <i class="fas fa-chevron-up"></i></li>
+            <li>iPhone SE/5 <i class="fas fa-chevron-up"></i></li>
+            <li>iPhone 6/7/8 <i class="fas fa-chevron-up"></i></li>
+            <li>iPhone 6/7/8 Plus <i class="fas fa-chevron-up"></i></li>
+            <li>iPhone X <i class="fas fa-chevron-up"></i></li>
+            <li>iPad <i class="fas fa-chevron-up"></i></li>
+            <li>iPad Pro <i class="fas fa-chevron-up"></i></li>
+            <li>
+              <div id="black" color="black" onclick="cdColor(this)"></div>
+              <div id="silver" color="silver" onclick="cdColor(this)"></div>
+              <div id="yellow" color="yellow" onclick="cdColor(this)"></div>
+            </li>
+          </ul>
+          <footer>
+            coded by <i class="fas fa-heart"> </i> and, Ahmed ghanem 
+          </footer>
+        </aside>
+        <main>
+          <div class="phone-wrapper" id="phone-wrapper">
+              <div rotate="rotate"  id="device" class="phone"><iframe  src=""></iframe></div> 
+          </div>
+         
+            
+
+          
+          
+        </main>
+      </div>
+    </section>
+ 
+    <script src="html2canvas.js" ></script>
+    <script src="main.js" ></script>
+  </body>
+</html>
