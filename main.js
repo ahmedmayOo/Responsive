@@ -1,22 +1,41 @@
 
 var wrapper;
+ var userColor = "black;";
+var input = "#";
+
  
-var input ;
-
-( function getWrapper(){
-
-    wrapper = document.getElementById('phone-wrapper');
-    
-    wrapper.setAttribute('src', "var")
-
-})();
 
 function upToggle() {
-    wrapper.innerHTML  = '<div id="device" class="phone"><iframe  src="https://ahmedghanem.netlify.com/"></iframe></div>';
+    
 }
 
 function downToggle() {
-    wrapper.innerHTML  = '<div id="device" class="tablet"><iframe  src="https://ahmedghanem.netlify.com/"></iframe></div>';
+      
+}
+
+function  phone(){
+    wrapper = document.getElementById('phone-wrapper');
+    wrapper.innerHTML = '<div id="device" class="phone"> <div class="thumb-right"></div><div class="volume-up"></div><div class="volume-down"></div> <iframe  src='+input.value+'></iframe></div> ';
+    child = wrapper.firstElementChild;
+    child.style.borderColor = userColor;
+}
+function  tablet(){
+    wrapper = document.getElementById('phone-wrapper');
+    wrapper.innerHTML = '<div id="device" class="tablet"> <div class="thumb-right"></div><div class="volume-up"></div><div class="volume-down"></div> <iframe  src='+input.value+'></iframe></div> ';
+    child = wrapper.firstElementChild;
+    child.style.borderColor = userColor;
+}
+function  labtop(){
+    wrapper = document.getElementById('phone-wrapper');
+    wrapper.innerHTML = '<div id="device" class="labtop"> <iframe  src='+input.value+'></iframe></div> ';
+    child = wrapper.firstElementChild;
+    child.style.borderColor = userColor;
+}
+function  tv(){
+    wrapper = document.getElementById('phone-wrapper');
+    wrapper.innerHTML = '<div id="device" class="tv"><iframe  src='+input.value+'></iframe></div> ';
+    child = wrapper.firstElementChild;
+    child.style.borderColor = userColor;
 }
 
 
@@ -38,16 +57,17 @@ function cdColor(obj) {
     switch (color) {
         case "black": 
         child.style.borderColor = "black";
+        userColor = "black";
         break;
 
         case "silver":
         child.style.borderColor = "#718093";
-        console.log("silver")
+        userColor = "#718093";
         break;
 
         case "yellow":
         child.style.borderColor = "#fbc531";
-
+        userColor = "#fbc531";    
     }
     
 }
@@ -56,14 +76,19 @@ function cdColor(obj) {
 function go() {
     device = document.getElementById('device');
     input = document.getElementsByTagName('input')[0];
-    iframe = device.firstElementChild;
+    iframe = device.lastElementChild;
     iframe.setAttribute('src', input.value);
 }
 
-function button() {
-
-} 
+ 
      
-html2canvas(document.querySelector("#capture")).then(canvas => {
-    document.body.appendChild(canvas)
-});
+  
+ 
+        $(document).ready(function(){
+          $(".static-icon").click(function(){
+            $("#fade1").fadeToggle(2000);
+            $("#fade2").fadeToggle("slow");
+            $("#fade3").fadeToggle();
+          });
+        });
+ 
