@@ -53,6 +53,7 @@ function rotate() {
 
 function cdColor(obj) {
     color = obj.getAttribute("color");
+    wrapper = document.getElementById('phone-wrapper');
     child = wrapper.firstElementChild;
     switch (color) {
         case "black": 
