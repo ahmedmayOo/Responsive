@@ -1,7 +1,7 @@
 
 var wrapper;
  
-var input = "https://ahmedghanem.netlify.com/";
+var input ;
 
 ( function getWrapper(){
 
@@ -12,11 +12,11 @@ var input = "https://ahmedghanem.netlify.com/";
 })();
 
 function upToggle() {
-    wrapper.innerHTML  = '<div id="device" class="phone"><iframe  src='+ input+'></iframe></div>';
+    wrapper.innerHTML  = '<div id="device" class="phone"><iframe  src="https://ahmedghanem.netlify.com/"></iframe></div>';
 }
 
 function downToggle() {
-    wrapper.innerHTML  = '<div id="device" class="tablet"><iframe  src='+ input+'></iframe></div>';
+    wrapper.innerHTML  = '<div id="device" class="tablet"><iframe  src="https://ahmedghanem.netlify.com/"></iframe></div>';
 }
 
 
