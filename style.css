@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
+ 
 /*
     shadow
     container
@@ -324,6 +324,7 @@ footer i {
   -o-transform: rotate(0deg);
 }
 .static-icon {
+  border: 2px solid #fff;
   padding-top: 3px;
   position: fixed;
   bottom: 30px;
@@ -351,6 +352,7 @@ footer i {
 
 .bell {
   position: relative;
+  
 }
 .bell::after {
   content: "1";
@@ -358,6 +360,7 @@ footer i {
   padding: 3px 5px;
   border-radius: 50%;
   background: red;
+  border: 1px solid #00a8ff;
   font-size: 12px;
   text-align: center;
   left: -4px;
@@ -446,7 +449,7 @@ footer i {
    
 }
 .tv {
- width: 1300px;
+ width: 95%;
  height: 600px;
  border: 20px solid #000;
  border-bottom-width: 16px;
@@ -458,6 +461,13 @@ footer i {
 
 iframe {
   border: none;
+  width: 100%;
+  position: absolute;
+}
+
+#inner {
+  width: 100%;
+  height: 100%;
 }
 
 .tv::after {
@@ -557,3 +567,13 @@ iframe {
   background: darkred;
 
 }
+
+
+main {
+  position: relative;
+}
+
+#phone-wrapper{
+
+}
+ 
